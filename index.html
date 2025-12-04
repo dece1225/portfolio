@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>김태현 — 포트폴리오</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="개인 포트폴리오 — 프로젝트, 기술 스택, 연락처" />
+  <style>
+    /* 간단한 커스텀 스타일 */
+    .gradient-bg { background: linear-gradient(90deg,#0f172a,#020617 60%); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 selection:bg-rose-300 selection:text-white">
+  <header class="fixed w-full z-30">
+    <nav class="backdrop-blur bg-white/60 dark:bg-slate-900/60 border-b border-slate-200/50">
+      <div class="container mx-auto px-6 py-3 flex items-center justify-between">
+        <a href="#home" class="font-semibold text-xl">태현 김</a>
+        <div class="hidden md:flex gap-6 items-center">
+          <a href="#projects" class="hover:underline">프로젝트</a>
+          <a href="#skills" class="hover:underline">기술</a>
+          <a href="#about" class="hover:underline">소개</a>
+          <a href="#contact" class="btn border rounded px-4 py-2">연락</a>
+        </div>
+        <button id="menuBtn" class="md:hidden">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section id="home" class="gradient-bg text-white pb-20">
+      <div class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">안녕하세요, 저는 <span class="text-rose-400">태현 김</span>입니다.</h1>
+          <p class="mt-4 text-lg max-w-2xl">프론트엔드 개발자 · 게임 개발자 · 포트폴리오용 간단한 소개문을 여기에 작성하세요. 새로운 프로젝트와 협업을 항상 환영합니다.</p>
+
+          <div class="mt-6 flex gap-4">
+            <a href="#projects" class="inline-block bg-rose-500 hover:bg-rose-600 text-white rounded px-4 py-2">프로젝트 보기</a>
+            <a href="#contact" class="inline-block border border-white rounded px-4 py-2">연락하기</a>
+          </div>
+
+          <div class="mt-8 grid grid-cols-2 gap-4 max-w-md">
+            <div class="bg-white/10 rounded p-4">
+              <div class="text-sm text-slate-200">주요 기술</div>
+              <div class="mt-2 font-medium">Unity · C# · React · TypeScript</div>
+            </div>
+            <div class="bg-white/10 rounded p-4">
+              <div class="text-sm text-slate-200">경력/학력</div>
+              <div class="mt-2 font-medium">프로젝트 중심의 경험</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <div class="w-full max-w-sm mx-auto bg-white/10 rounded-lg p-4 shadow-lg">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=111" alt="프로필 이미지" class="w-full rounded object-cover h-56">
+            <div class="mt-4 text-center text-sm">프로필 사진을 교체하려면 이미지 URL을 바꾸세요.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold">프로젝트</h2>
+      <p class="mt-2 text-slate-600">주요 작업 예시를 아래에 적어주세요. 각 카드에 GitHub, 데모 링크를 넣을 수 있습니다.</p>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 카드 예시 -->
+        <article class="bg-white rounded-lg shadow p-4">
+          <img src="https://images.unsplash.com/photo-1526378720863-4a0f9c0c9b5a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=222" alt="프로젝트 1" class="w-full h-36 object-cover rounded">
+          <h3 class="mt-3 font-semibold">프로젝트 1 — 게임 프로젝트</h3>
+          <p class="mt-2 text-sm text-slate-600">간단한 설명을 여기에 넣으세요. 사용 기술: Unity, Photon 등.</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-sm underline">데모</a>
+            <a href="#" class="text-sm underline">GitHub</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg shadow p-4">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=333" alt="프로젝트 2" class="w-full h-36 object-cover rounded">
+          <h3 class="mt-3 font-semibold">프로젝트 2 — 웹 앱</h3>
+          <p class="mt-2 text-sm text-slate-600">간단한 설명을 여기에 넣으세요. 사용 기술: React, TypeScript 등.</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-sm underline">데모</a>
+            <a href="#" class="text-sm underline">GitHub</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg shadow p-4">
+          <img src="https://images.unsplash.com/photo-1587691592128-70f2b6f93b1e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=444" alt="프로젝트 3" class="w-full h-36 object-cover rounded">
+          <h3 class="mt-3 font-semibold">프로젝트 3 — 툴/유틸리티</h3>
+          <p class="mt-2 text-sm text-slate-600">간단한 설명을 여기에 넣으세요.</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-sm underline">데모</a>
+            <a href="#" class="text-sm underline">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-slate-100 py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold">기술 스택</h2>
+        <p class="mt-2 text-slate-600">자신 있는 기술을 적어주세요 — 아래는 예시입니다.</p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="px-3 py-1 rounded-full border">Unity</span>
+          <span class="px-3 py-1 rounded-full border">C#</span>
+          <span class="px-3 py-1 rounded-full border">React</span>
+          <span class="px-3 py-1 rounded-full border">TypeScript</span>
+          <span class="px-3 py-1 rounded-full border">Photon</span>
+          <span class="px-3 py-1 rounded-full border">Node.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold">소개</h2>
+      <p class="mt-4 text-slate-600 max-w-3xl">여기에 더 긴 자기소개를 작성하세요. 경력, 관심사, 작업 방식, 연락 가능한 시간 등을 적으면 좋습니다.</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h4 class="font-semibold">경력하이라이트</h4>
+          <ul class="mt-2 text-sm text-slate-600 list-disc pl-5">
+            <li>프로젝트 A — 역할, 성과</li>
+            <li>프로젝트 B — 역할, 성과</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg p-4 shadow">
+          <h4 class="font-semibold">교육/수상</h4>
+          <p class="mt-2 text-sm text-slate-600">관련 교육, 수상 내역을 여기에 적으세요.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-900 text-white py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold">연락</h2>
+        <p class="mt-2 text-slate-300">간단한 연락처 폼 — 실제로 운영하려면 백엔드(또는 Formspree 등)를 연결하세요.</p>
+
+        <form class="mt-6 max-w-xl" onsubmit="event.preventDefault(); location.href='mailto:you@example.com?subject='+encodeURIComponent(document.getElementById('subject').value)+'&body='+encodeURIComponent(document.getElementById('message').value);">
+          <input id="subject" type="text" placeholder="제목" class="w-full p-3 rounded bg-slate-800 border border-slate-700" required>
+          <textarea id="message" rows="5" placeholder="메시지" class="w-full mt-3 p-3 rounded bg-slate-800 border border-slate-700" required></textarea>
+          <div class="mt-4">
+            <button type="submit" class="bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded">이메일로 보내기</button>
+          </div>
+        </form>
+
+        <div class="mt-6 text-slate-400">
+          <div>이메일: <a href="mailto:you@example.com" class="underline">you@example.com</a></div>
+          <div class="mt-2">GitHub: <a href="#" class="underline">github.com/yourname</a></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-6 text-center text-sm text-slate-500">
+      © <span id="year"></span> 태현 김. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 모바일 메뉴 토글
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn.addEventListener('click', ()=>{
+      const nav = document.querySelector('nav');
+      if(!document.querySelector('.mobile-menu')){
+        const div = document.createElement('div');
+        div.className = 'mobile-menu absolute right-4 top-14 bg-white rounded shadow p-4 md:hidden';
+        div.innerHTML = `\n          <a href='#projects' class='block py-1'>프로젝트</a>\n          <a href='#skills' class='block py-1'>기술</a>\n          <a href='#about' class='block py-1'>소개</a>\n          <a href='#contact' class='block py-1'>연락</a>\n        `;
+        document.body.appendChild(div);
+        setTimeout(()=> document.addEventListener('click', closeOnOutside), 10);
+      } else {
+        document.querySelector('.mobile-menu').remove();
+      }
+    });
+
+    function closeOnOutside(e){
+      const menu = document.querySelector('.mobile-menu');
+      if(menu && !menu.contains(e.target) && e.target.id !== 'menuBtn'){
+        menu.remove();
+        document.removeEventListener('click', closeOnOutside);
+      }
+    }
+  </script>
+</body>
+</html>
