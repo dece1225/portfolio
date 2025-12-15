@@ -137,73 +137,44 @@
     <section id="about" class="container mx-auto px-6 py-16">
       <h2 class="text-3xl font-bold">세부 소개</h2>
       <p class="mt-4 text-slate-600 max-w-3xl"></p>
-      <div class="mt-6 grid grid-cols-1 gap-6">
+      
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- 교육 과정 -->
         <div class="bg-white rounded-lg p-6 md:p-8 shadow">
-          <h4 class="font-semibold">※ 경력 하이라이트</h4>
+          <h4 class="font-semibold">※ 교육 과정</h4>
+          <p class="mt-2 text-sm text-slate-600">
+            <b>코리아IT아카데미 &lt;정보보안 & 웹서버 개발&gt; 과정 이수</b>
+          </p>
+          <ul class="mt-2 text-sm text-slate-600 list-disc pl-5">
+            <li><b>웹서버 프로그래밍</b> - Java, JSP, Servlet</li>
+            <li><b>DB 활용</b> - Oracle, SQL, 성능 최적화</li>
+            <li><b>웹/서버 보안</b> - SQLi, XSS, CSRF 대응</li>
+            <li><b>리눅스 서버</b> - 웹서버 구축 및 보안 설정</li>
+            <li><b>네트워크 인프라</b> - 서비스(DNS, FTP, TFTP) 구축</li>
+            <li><b>팀 프로젝트</b> - 기업 맞춤 보안 솔루션 설계</li>
+          </ul>
+        </div>
+        <!-- 팀 프로젝트 -->
+        <div class="bg-white rounded-lg p-6 md:p-8 shadow">
+          <h4 class="font-semibold">※ 팀 프로젝트</h4>
           <ul class="mt-2 text-sm text-slate-600 list-disc pl-5">
             <li>
               <p><b>중간 프로젝트 - 함께걸음(커뮤니티 웹 서비스 구축)</b></p>
-              <p> — 역할 : 관리자 페이지(회원관리 메인/상세 페이지, 공지사항관리 메인/상세 페이지, 문의사항관리 메인/상세 페이지),
-                서초구 지하철 정보 메인/상세 페이지</p>
-              <p> — 성과 : 웹 페이지에 실제 DB값 실시간으로 연동, 비동기 처리 통한 네트워크 요청 효율적 처리</p>
+              <p>— 역할 : 관리자 페이지(회원관리, 공지사항관리, 문의사항관리), 서초구 지하철 정보 페이지</p>
+              <p>— 성과 : DB 실시간 연동(100%), 비동기 처리로 성능 개선(80%)</p>
             </li>
             <li>
               <p><b>세미 프로젝트 - 보건제공재단(네트워크 및 인프라 구축)</b></p>
-              <p>— 역할 : 서비스 설정(TFTP, DNS, FTP)</p>
-              <p>— 성과 : TFTP 통한 설정 백업, DNS 서비스 구축, FTP 파일 전송 서비스 구축</p>
+              <p>— 역할 : TFTP, DNS, FTP 설정</p>
+              <p>— 성과 : 설정 백업(100%) 및 파일 전송 환경 구축(80%)</p>
             </li>
             <li>
-              <p><b>최종 프로젝트 - 불펜토크(인프라 취약점 진단 및 보안점검)</b></p>
-              <p>— 역할 : 윈도우 서버와 보안장비의 구축 및 보안 점검, ISMS-P 현황 및 가이드 제공</p>
-              <p>— 성과 : 윈도우 DHCP, SFTP, AD, Patch 서버 구축, UTM 보안 장비 운용, ISMS-P에 대한 이해</p>
+              <p><b>최종 프로젝트 - 불펜토크(보안 점검)</b></p>
+              <p>— 역할 : 윈도우 서버·보안장비 구축</p>
+              <p>— 성과 : DHCP(100%), AD(90%), SFTP(90%), UTM 운용(100%)</p>
             </li>
           </ul>
         </div>
-      </div>
-        <div class="mt-6 grid grid-cols-1 gap-6">
-          <div class="bg-white rounded-lg p-6 md:p-8 shadow">
-          <h4 class="font-semibold">※ 교육 과정</h4>
-          <p class="mt-2 text-sm text-slate-600">
-            <b>코리아IT아카데미의 &lt;(정보보안 & 웹서버 개발) 웹 보안 솔루션 구축 융합과정&gt; 이수</b>
-          </p>
-          <ul class="mt-2 text-sm text-slate-600 list-disc pl-5">
-            <li>
-              <b>웹서버 프로그래밍</b><br>
-              - 웹 개발 기초 및 서버 사이드 프로그래밍(Java, JSP, Servlet)<br>
-              - Oracle 데이터베이스 연동 및 CRUD 구현
-            </li>
-            <li>
-              <b>데이터베이스 이해 및 활용</b><br>
-              - 관계형 데이터베이스 개념 및 설계<br>
-              - SQL 문법(DML, DDL, DCL) 실습 및 성능 최적화
-            </li>
-            <li>
-              <b>웹 보안 및 서버 보안</b><br>
-              - SQL 인젝션, XSS, CSRF 등의 보안 위협 대응<br>
-              - 보안 강화를 위한 보안 패치 및 웹 방화벽 설정<br>
-            </li>
-            <li>
-              <b>리눅스 및 서버 관리</b><br>
-              - 리눅스 환경 설정 및 웹서버 구축<br>
-              - 서버 운영체제 보안 및 접근 제어
-            </li>
-            <li>
-              <b>중간 프로젝트 (Java 기반 웹 서비스 개발)</b><br>
-              - Java/MVC2 패턴을 활용한 실전 프로젝트 개발
-            </li>
-            <li>
-              <b>세미 프로젝트 (기초 네트워크 인프라 구축)</b><br>
-              - 패킷 트레이서, GNS3 활용한 네트워크 인프라 구축<br>
-              - 리눅스 서버와 연동하여 서비스(DNS, FTP, TFTP 등) 제공
-            </li>
-            <li>
-              <b>최종 프로젝트 (기업 맞춤형 웹 방화벽 구축)</b><br>
-              - 기업 환경에 적용 가능한 보안 솔루션 설계 및 구축<br>
-              - 팀별 프로젝트 진행 및 발표
-            </li>
-          </ul>
-        </div>
-      </div>
       </div>
     </section>
 
